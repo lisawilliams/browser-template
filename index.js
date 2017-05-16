@@ -5,25 +5,26 @@
 
 // load manifests
 // scripts
-// require('./assets/scripts/index.js')
+require('./assets/scripts/index.js')
 
-const config = require('./config')
+// This code was from the solution branch of today's Bootstrap
+// lesson, but it doesn't work, probably because it refers to api
+// and config stuff we don't have yet.
 
-$(() => {
-  setAPIOrigin(location, config)
-  $('form').on('submit', function (event) {
-    event.preventDefault()
-    const input = $('#name').val()
-    console.log(input)
-    $('#myModal').modal('hide')
-  })
-})
+// const config = require('./config')
+//
+// $(() => {
+//   setAPIOrigin(location, config)
+//   $('form').on('submit', function (event) {
+//     event.preventDefault()
+//     const input = $('#name').val()
+//     console.log(input)
+//     $('#newGame').modal('hide')
+//   })
+// })
 
 // use require with a reference to bundle the file and use it in this file
 // const example = require('./example');
 
 // styles
-// require('./assets/styles/index.scss')
-
-// styles
-// require('./assets/styles/index.scss')
+require('./assets/styles/index.scss')
